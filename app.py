@@ -59,6 +59,7 @@ class FileSeparator:
 
     def execute(self):
         st.session_state.files_list = os.listdir(st.session_state.folder_path)
+        # print(st.session_state.files_list)
         genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
         model = genai.GenerativeModel("gemini-pro")
         for file_name in st.session_state.files_list:
