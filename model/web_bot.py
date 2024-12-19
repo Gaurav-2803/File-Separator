@@ -86,7 +86,7 @@ def write_data(name, filenames):
     pass
 
 
-# time.sleep(10)
+time.sleep(10)
 
 # Close the driver
 driver.quit()
